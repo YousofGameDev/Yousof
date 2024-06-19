@@ -140,3 +140,26 @@ section {
   background-position: right top;
 }*/
 
+.MyGames a{
+
+
+}
+
+.MyGames ul{
+  list-style-type: none;
+}
+
+.Game1{
+  color: #000000;
+  text-decoration: none;
+  background-color: rgb(119, 119, 119);
+  font-size: 1.1em;
+  font-weight: 600px;
+  display: inline-block;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  padding: 0.5em 1.5em;
+}
+
