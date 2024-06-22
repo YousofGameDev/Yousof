@@ -1,3 +1,5 @@
+/* styles.css */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 * {
@@ -8,12 +10,12 @@
     scroll-behavior: smooth;
 }
 
-body{
-  background-color: #000000;
+body {
+    background-color: white; /* Dark Slate Blue */
 }
 
 header {
-    background-color: #EFF1F3;
+    background-color: white; /* Light Grey */
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -25,14 +27,14 @@ header {
 
 .logo {
     text-decoration: none;
-    color: #223843;
+    color: #31363F; /* Off White */
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
 }
 
 .HeaderNavigation a {
-    color: #223843;
+    color: #31363F; /* Off White */
     font-weight: 500;
     font-size: 1.5em;
     padding-left: 30px;
@@ -40,7 +42,7 @@ header {
 }
 
 .HeaderNavigation a:hover {
-    color: #D8B4A0;
+    color: #D8B4A0; /* Light Brown */
 }
 
 .hamburger {
@@ -50,7 +52,7 @@ header {
 
 .hamburger i {
     font-size: 1.8em;
-    color: #223843;
+    color: #EFF1F3; /* Off White */
 }
 
 .dropdown-menu {
@@ -59,19 +61,19 @@ header {
     position: absolute;
     top: 60px;
     right: 200px;
-    background-color: #EFF1F3;
-    border: 1px solid #D8B4A0;
+    background-color: #DBD3D8; /* Light Grey */
+    border: 1px solid #D8B4A0; /* Light Brown */
     border-radius: 5px;
 }
 
 .dropdown-menu a {
     padding: 10px 20px;
     text-decoration: none;
-    color: #223843;
+    color: #223843; /* Dark Slate Blue */
 }
 
 .dropdown-menu a:hover {
-    background-color: #D8B4A0;
+    background-color: #D8B4A0; /* Light Brown */
 }
 
 @media (max-width: 800px) {
@@ -98,11 +100,10 @@ section {
     background: url("New Project (5).png") no-repeat;
     background-size: cover;
     background-position: center;
-    /*background-attachment: fixed;*/
 }
 
 .main h2 {
-    color: #EFF1F3;
+    color: #EFF1F3; /* Off White */
     font-size: 1.4em;
     font-weight: 500;
 }
@@ -114,12 +115,12 @@ section {
     -webkit-text-fill-color: transparent;
     display: inline-block;
     margin-top: 10px;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: 800;
 }
 
 .main h3 {
-    color: #EFF1F3;
+    color: #EFF1F3; /* Off White */
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -128,9 +129,9 @@ section {
 }
 
 .main-btn {
-    color: #223843;
+    color: #223843; /* Dark Slate Blue */
     text-decoration: none;
-    background-color: #EFF1F3;
+    background-color: #DBD3D8; /* Light Grey */
     font-size: 1.1em;
     font-weight: 600;
     display: inline-block;
@@ -138,25 +139,26 @@ section {
     letter-spacing: 1px;
     border-radius: 15px;
     margin-bottom: 40px;
+    margin-top: 30px;
     transition: 0.5s ease;
 }
 
 .main-btn:hover {
-    background-color: #D8B4A0;
+    background-color: #D8B4A0; /* Light Brown */
     transform: scale(1.1);
 }
 
 .social-icons a {
-    color: #EFF1F3;
+    color: #EFF1F3; /* Off White */
     padding-top: 1px;
     font-size: 1.7em;
     padding-right: 20px;
-    transition: font-size 0.5s, padding-right 0.5s, color 0.5s;
+    transition: font-size 0.2s, padding-right 0.5s, color 0.5s;
 }
 
 .social-icons a:hover {
-    color: #DBD3D8;
-    font-size: 2em;
+    color: #D8B4A0; /* Light Grey */
+    transform: scale(1.5);
 }
 
 .MyGames {
@@ -195,10 +197,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #e0e0e0; /* Off White */
+    color: #000000; /* Dark Slate Blue */
     border-radius: 15px;
     overflow: hidden;
+}
+
+.card-front{
+    background-color: #6d6d6d;
 }
 
 .card-front img {
@@ -234,31 +240,152 @@ section {
 .card-back a {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000000; /* Dark Slate Blue */
+    color: white; /* Off White */
     text-decoration: none;
     border-radius: 5px;
     transition: 0.2s;
 }
+
 .card-back a:hover {
-  color:#223843
+    color: #979797; /* Light Grey */
 }
 
-hr{
-  color: #223843;
-  margin-top: 50px;
+hr {
+    color: black; /* Off White */
+    margin-top: 50px;
 }
 
-.MyGamesName{
-  margin-top: 10vh;
-  display: flex;
-  font-size: 50px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: #EFF1F3;
+.MyGamesName {
+    margin-top: 10vh;
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000; /* Off White */
 }
 
-.MyGames{
-  background-color: #000000;
+.MyGames {
+    background-color: white; /* Dark Slate Blue */
+}
+
+.AboutMe{
+    background-color: #000000;
+}
+
+.AboutMe {
+    color: white;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.AboutMe h2{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.AboutMe p{
+    color: white;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutMe a{
+    color: #000000; /* Dark Slate Blue */
+    text-decoration: none;
+    background-color: #ffffff; /* Light Grey */
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    transition: 0.5s ease;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutMe a:hover{
+    background-color: #777777; /* Light Brown */
+    transform: scale(1.1);
+}
+
+
+.container{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.ContactMe {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the section takes up at least the full viewport height */
+}
+
+.ContactMe h2 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.ContactMe div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.ContactMe a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000000;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+}
+
+.ContactMe a:hover {
+    transform: scale(1.1);
+}
+
+.ContactMe h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterIcons{
+    color: #ffffff;
+    padding-top: 1px;
+    font-size: 1.7em;
+    padding-right: 20px;
+    transition: font-size 0.5s, padding-right 0.5s, color 0.5s;
 }
