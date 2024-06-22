@@ -76,18 +76,6 @@ header {
     background-color: #D8B4A0; /* Light Brown */
 }
 
-@media (max-width: 800px) {
-    header {
-        padding: 10px 20px;
-    }
-    .HeaderNavigation {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
-}
-
 section {
     padding: 100px;
 }
@@ -382,10 +370,69 @@ hr {
     justify-content: space-between;
 }
 
+.footer p{
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+}
+
 .FooterIcons{
     color: #ffffff;
     padding-top: 1px;
     font-size: 1.7em;
     padding-right: 20px;
     transition: font-size 0.5s, padding-right 0.5s, color 0.5s;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
 }
