@@ -11,12 +11,12 @@
 }
 
 body {
-    background-color: white; /* Dark Slate Blue */
+    background-color: white; 
 }
 
 header {
-    background: rgba(0, 0, 0, 0.534); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
+    background: rgba(0, 0, 0, 0.534); 
+    backdrop-filter: blur(10px); 
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -28,7 +28,7 @@ header {
 
 .logo {
     text-decoration: none;
-    color: #ffffff; /* Off White */
+    color: #ffffff; 
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
@@ -45,7 +45,7 @@ header {
 }
 
 .HeaderNavigation a {
-    color: #ffffff; /* Off White */
+    color: #ffffff; 
     font-weight: 500;
     font-size: 1.5em;
     padding-left: 30px;
@@ -54,13 +54,13 @@ header {
 }
 
 .HeaderNavigation a:hover {
-    color: #D8B4A0; /* Light Brown */
+    color: #D8B4A0; 
 }
 
 .collaborate-BTN{
-    color: #223843; /* Dark Slate Blue */
+    color: #223843; 
     text-decoration: none;
-    background-color: #ffffff; /* Light Grey */
+    background-color: #ffffff; 
     font-size: 15px;
     font-weight: 600;
     display: inline-block;
@@ -90,7 +90,7 @@ section {
 }
 
 .main h2 {
-    color: #EFF1F3; /* Off White */
+    color: #EFF1F3; 
     font-size: 1.4em;
     font-weight: 500;
 }
@@ -107,7 +107,7 @@ section {
 }
 
 .main h3 {
-    color: #EFF1F3; /* Off White */
+    color: #EFF1F3; 
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -116,9 +116,9 @@ section {
 }
 
 .main-btn {
-    color: #223843; /* Dark Slate Blue */
+    color: #223843; 
     text-decoration: none;
-    background-color: #DBD3D8; /* Light Grey */
+    background-color: #DBD3D8; 
     font-size: 1.1em;
     font-weight: 600;
     display: inline-block;
@@ -131,12 +131,12 @@ section {
 }
 
 .main-btn:hover {
-    background-color: #D8B4A0; /* Light Brown */
+    background-color: #D8B4A0; 
     transform: scale(1.1);
 }
 
 .social-icons a {
-    color: #EFF1F3; /* Off White */
+    color: #EFF1F3; 
     padding-top: 1px;
     font-size: 1.7em;
     padding-right: 20px;
@@ -144,7 +144,7 @@ section {
 }
 
 .social-icons a:hover {
-    color: #D8B4A0; /* Light Grey */
+    color: #D8B4A0; 
     transform: scale(1.5);
 }
 
@@ -184,8 +184,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e0e0e0; /* Off White */
-    color: #000000; /* Dark Slate Blue */
+    background-color: #e0e0e0; 
+    color: #000000; 
     border-radius: 15px;
     overflow: hidden;
 }
@@ -227,19 +227,19 @@ section {
 .card-back a {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #000000; /* Dark Slate Blue */
-    color: white; /* Off White */
+    background-color: #000000; 
+    color: white; 
     text-decoration: none;
     border-radius: 5px;
     transition: 0.2s;
 }
 
 .card-back a:hover {
-    color: #979797; /* Light Grey */
+    color: #979797; 
 }
 
 hr {
-    color: black; /* Off White */
+    color: black; 
     margin-top: 50px;
 }
 
@@ -250,11 +250,11 @@ hr {
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: #000000; /* Off White */
+    color: #000000; 
 }
 
 .MyGames {
-    background-color: white; /* Dark Slate Blue */
+    background-color: white; 
 }
 
 
@@ -316,9 +316,9 @@ hr {
 }
 
 .AboutMe a{
-    color: #000000; /* Dark Slate Blue */
+    color: #000000; 
     text-decoration: none;
-    background-color: #ffffff; /* Light Grey */
+    background-color: #ffffff; 
     font-size: 1em;
     font-weight: 600;
     padding: 0.9375em 2.1875em;
@@ -333,7 +333,7 @@ hr {
 }
 
 .AboutMe a:hover{
-    background-color: #777777; /* Light Brown */
+    background-color: #777777; 
     transform: scale(1.1);
 }
 
@@ -350,7 +350,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensures the section takes up at least the full viewport height */
+    min-height: 100vh; 
 }
 
 .ContactMe h2 {
