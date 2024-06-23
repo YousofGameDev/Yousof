@@ -29,3 +29,51 @@ hamburger.addEventListener("click", function () {
     dropdownMenu.classList.toggle("show");
   });
   });
+
+  function getBackgroundColor(element) {
+    let bgColor = window.getComputedStyle(element).backgroundColor;
+    if (bgColor === 'rgba(0, 0, 0, 0)' || bgColor === 'transparent') {
+        return getBackgroundColor(element.parentElement);
+    }
+    return bgColor;
+}
+
+function luminance(r, g, b) {
+    let a = [r, g, b].map(function (v) {
+        v /= 255;
+        return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
+}
+
+function getRGBValues(color) {
+    let rgb = color.match(/\d+/g).map(Number);
+    return { r: rgb[0], g: rgb[1], b: rgb[2] };
+}
+
+function updateHeaderTextColor() {
+    const header = document.getElementById('header');
+    const sections = document.querySelectorAll('section');
+    let bgColor, r, g, b, lum;
+
+    for (let section of sections) {
+        let rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            bgColor = getBackgroundColor(section);
+            break;
+        }
+    }
+
+    if (bgColor) {
+        ({ r, g, b } = getRGBValues(bgColor));
+        lum = luminance(r, g, b);
+        header.style.color = lum > 0.5 ? 'black' : 'white';
+        document.querySelectorAll('.logo, .HeaderNavigation a').forEach(el => {
+            el.style.color = lum > 0.5 ? 'black' : 'white';
+        });
+    }
+}
+
+window.addEventListener('scroll', updateHeaderTextColor);
+window.addEventListener('load', updateHeaderTextColor);
+window.addEventListener('resize', updateHeaderTextColor);

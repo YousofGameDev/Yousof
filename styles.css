@@ -15,7 +15,8 @@ body {
 }
 
 header {
-    background-color: white; /* Light Grey */
+    background: rgba(0, 0, 0, 0.534); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -27,53 +28,51 @@ header {
 
 .logo {
     text-decoration: none;
-    color: #31363F; /* Off White */
+    color: #ffffff; /* Off White */
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
 }
 
+.HeaderContainer {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.HeaderNavigation{
+    display: flex;
+}
+
 .HeaderNavigation a {
-    color: #31363F; /* Off White */
+    color: #ffffff; /* Off White */
     font-weight: 500;
     font-size: 1.5em;
     padding-left: 30px;
     text-decoration: none;
+    text-align: center;
 }
 
 .HeaderNavigation a:hover {
     color: #D8B4A0; /* Light Brown */
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger i {
-    font-size: 1.8em;
-    color: #EFF1F3; /* Off White */
-}
-
-.dropdown-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 200px;
-    background-color: #DBD3D8; /* Light Grey */
-    border: 1px solid #D8B4A0; /* Light Brown */
-    border-radius: 5px;
-}
-
-.dropdown-menu a {
-    padding: 10px 20px;
-    text-decoration: none;
+.collaborate-BTN{
     color: #223843; /* Dark Slate Blue */
+    text-decoration: none;
+    background-color: #ffffff; /* Light Grey */
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: 0.5s ease;
 }
 
-.dropdown-menu a:hover {
-    background-color: #D8B4A0; /* Light Brown */
+.collaborate-BTN:hover{
+    transform: scale(1.04);
+    background-color: #D8B4A0;
 }
 
 section {
@@ -256,6 +255,37 @@ hr {
 
 .MyGames {
     background-color: white; /* Dark Slate Blue */
+}
+
+
+.MyVideosName{
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000; 
+    margin-bottom: 30px;
+}
+
+.VideosYoutube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Video1{
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+.Video2{
+    margin-left: 15px;
+    margin-top: 10px
+}
+
+.VideosYoutube iframe{
+    border-radius: 15px;
 }
 
 .AboutMe{
