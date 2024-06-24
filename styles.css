@@ -51,6 +51,7 @@ header {
     padding-left: 30px;
     text-decoration: none;
     text-align: center;
+    transition: 0.3s;
 }
 
 .HeaderNavigation a:hover {
@@ -135,17 +136,22 @@ section {
     transform: scale(1.1);
 }
 
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
 .social-icons a {
     color: #EFF1F3; 
-    padding-top: 1px;
-    font-size: 1.7em;
-    padding-right: 20px;
-    transition: font-size 0.2s, padding-right 0.5s, color 0.5s;
+    text-decoration: none;
+    font-size: 1.6em;
+    margin-right: 20px;
+    transition: 0.5s ease;
 }
 
 .social-icons a:hover {
+    transform: scale(1.2);
     color: #D8B4A0; 
-    transform: scale(1.5);
 }
 
 .MyGames {
@@ -446,6 +452,8 @@ hr {
         align-items: center;
     }
 
+    
+
 }
 
 @media (max-width:641px){
@@ -460,11 +468,16 @@ hr {
     .main-content h3{
         font-size: 1.4em;
     }
+
+    
+    .VideosYoutube{
+        transform: scale (0.5);
+    }
+
 }
 
 @media (max-width:300px){
     body{
         font-size: 10px;
-     
     }
 }
