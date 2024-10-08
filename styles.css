@@ -284,12 +284,13 @@ hr {
 
 .Video1{
     margin-left: 10px;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .Video2{
-    margin-left: 15px;
-    margin-top: 10px
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .VideosYoutube iframe{
