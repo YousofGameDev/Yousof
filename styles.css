@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.534); 
+    background: rgb(0, 0, 0); 
     backdrop-filter: blur(10px); 
     width: 100%;
     position: fixed;
@@ -24,6 +24,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
+    margin-top: 10;
+    border-radius: 35;
+    
 }
 
 .logo {
